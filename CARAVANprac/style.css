@@ -2,12 +2,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
   width: 90%;
   padding: 15px 0;
   margin: 0 auto;
+  text-align: center; /*header要素のテキストを中央揃え*/
+}
+
+header .heading {　/*headerタグ内のheadingクラスにのみ反映される*/
+  font-size: 32px;
+}
+/*h1{はページ内全てのh1要素に適応
+  header h1{はheaderクラス内にあるh１要素に対してのみ適応*/
+
+.nav-list {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  list-style: none; /*箇条書きリスト行頭の・なし*/
+  display: inline-block;　/*要素の表示形式を設定*/
+  margin: 0 20px;
 }
 
 .main-visual {
@@ -22,7 +46,7 @@ header {
 
 .main {
   width: 840px;
-  display: flex; /*flexcoxの使用*/
+  display: flex; /* Flexboxの利用*/
   justify-content: center; /*子要素の横並び中央寄せ*/
   margin: 0 auto;
 }
@@ -40,4 +64,11 @@ header {
 footer {
   width: 100%;
   height: 120px;
+  text-align: center;
+  line-height: 120px;
+  background-color: #848282;
+}
+
+.footer-text {
+  color: #fff;
 }
