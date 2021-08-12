@@ -3,3 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header {
+  width: 10%;
+}
+
+/*h1*/
+.headline {
+  font-size: 22px;
+}
+
+nav /*.nav*/ {
+  text-align: center;
+}
+
+/*ol*/
+.list {
+  padding-left: 40px; /*リセットcssで打ち消した番号表示領域の補完*/
+}
