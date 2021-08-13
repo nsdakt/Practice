@@ -13,14 +13,14 @@ header {
   width: 90%;
   padding: 15px 0;
   margin: 0 auto;
-  text-align: center; /*header要素のテキストを中央揃え*/
+  text-align: center; /* .heading h1要素のテキスト左右中央揃え*/
 }
 
-header .heading {　/*headerタグ内のheadingクラスにのみ反映される*/
+header .heading {　/* headerタグ内のheadingクラスにのみ反映される */
   font-size: 32px;
 }
-/*h1{はページ内全てのh1要素に適応
-  header h1{はheaderクラス内にあるh１要素に対してのみ適応*/
+/* h1{はページ内全てのh1要素に適応
+  header h1{はheaderクラス内にあるh１要素に対してのみ適応 */
 
 .nav-list {
   text-align: center;
@@ -29,25 +29,42 @@ header .heading {　/*headerタグ内のheadingクラスにのみ反映される
 }
 
 .nav-list-item {
-  list-style: none; /*箇条書きリスト行頭の・なし*/
-  display: inline-block;　/*要素の表示形式を設定*/
+  list-style: none; /* 箇条書きリスト行頭の・なし */
+  display: inline-block;　/* -item li要素を横並びで表示 */
   margin: 0 20px;
 }
 
 .main-visual {
   width: 100%;
   height: 300px;
+  background-image: url(img/mv.jpg);
+  background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-position: center; /* 背景画像を中央に配置 */
 }
 
 .main-visual-content {
-  width: 350px;
-  height: 300px; /*親の高さに揃える*/
+  width: 40%;
+  height: 300px; /* 親の高さに揃える */
+  background-color: rgba(0,0,0,0.5); /* 背景色を半透明の黒 */
+  text-align: center; /* -text,-name p要素のテキストを中央揃え*/
+  padding-top: 105px;
+}
+
+/* 追加 */
+.main-visual-text {
+  color: #fff;
+}
+
+/* 追加 */
+.main-visual-name {
+  margin-top: 30px; /* 上、外側の余白 */
+  color: #fff;
 }
 
 .main {
   width: 840px;
-  display: flex; /* Flexboxの利用*/
-  justify-content: center; /*子要素の横並び中央寄せ*/
+  display: flex; /* Flexboxの利用 */
+  justify-content: center; /* 子要素の横並び中央寄せ */
   margin: 0 auto;
 }
 
