@@ -61,21 +61,12 @@ header .heading {　/* headerタグ内のheadingクラスにのみ反映され�
   color: #fff;
 }
 
-.main {
-  width: 840px;
-  display: flex; /* Flexboxの利用 */
-  justify-content: center; /* 子要素の横並び中央寄せ */
-  margin: 0 auto;
-}
+
 
 .blog {
-  width: 600px;
-  height: 1400px;
 }
 
 .sidebar {
-  width: 240px;
-  height: 1400px;
 }
 
 footer {
