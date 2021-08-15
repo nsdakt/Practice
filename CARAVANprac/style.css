@@ -9,11 +9,28 @@ a {
   text-decoration: none;
 }
 
+header,
+nav,
+h2,
+.main-visual,
+footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
 header {
   width: 90%;
   padding: 15px 0;
   margin: 0 auto;
   text-align: center; /* .heading h1要素のテキスト左右中央揃え*/
+  position: relative;
+}
+
+.social {
+  display: inline-block;
+  margin-left: 20px;
+  position: absolute;
+  top: 22px;
+  right: 22px;
 }
 
 header .heading {
